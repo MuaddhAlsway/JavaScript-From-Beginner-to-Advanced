@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scroll</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            overflow: hidden;
+            position: relative;
+        }
+        .image-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .image-wrapper img {
+            width: 300px;
+            height: 200px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        .btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .prev {
+            left: 10px;
+        }
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn prev" onclick="scrollImages(-1)">&#10094;</button>
+        <div class="image-wrapper" id="imageWrapper">
+            <img src="https://via.placeholder.com/300x200/ff7f7f/333333" alt="Image 1">
+            <img src="https://via.placeholder.com/300x200/7f7fff/333333" alt="Image 2">
+            <img src="https://via.placeholder.com/300x200/7fff7f/333333" alt="Image 3">
+            <img src="https://via.placeholder.com/300x200/ffff7f/333333" alt="Image 4">
+        </div>
+        <button class="btn next" onclick="scrollImages(1)">&#10095;</button>
+    </div>
+    <script>
+        let scrollAmount = 0;
+        function scrollImages(direction) {
+            const wrapper = document.getElementById('imageWrapper');
+            const imgWidth = 310;
+            scrollAmount += direction * imgWidth;
+            if (scrollAmount < 0) {
+                scrollAmount = 0;
+            } else if (scrollAmount > (wrapper.scrollWidth - wrapper.clientWidth)) {
+                scrollAmount = wrapper.scrollWidth - wrapper.clientWidth;
+            }
+            wrapper.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+    </script>
+</body>
+</html>
