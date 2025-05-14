@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Practice.js">
+
+    </script>
+</head>
+<body>
+    <h2>What is your favorite tv-show</h2>
+    <button
+    onclick="
+playGame('Firends')
+    "
+    >Friends</button><br>
+    <br><button
+    onclick="
+ playGame('Poket99')
+    ">
+       Pocket99</button><br><br><br><br>
+       <button
+    onclick="
+playGame('Lupin')
+    "
+    >
+    lupin</button> <br><br><br><br>
+
+    <button
+    onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score')
+    
+    "
+    >
+Reset score
+    </button>
+</body>
+</html>
