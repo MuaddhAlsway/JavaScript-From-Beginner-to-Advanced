@@ -1,0 +1,93 @@
+/*
+
+const myArray = [10, 20, 30  ];
+console.log(myArray);
+
+console.log(myArray[0]);
+console.log(myArray[1]);
+console.log(myArray[2]);
+
+myArray[0] = 9;
+console.log(myArray);
+
+[1, 'hello', true, {name: 'stock'}, [1, 2]]
+console.log(typeof [1, 2]);
+
+console.log(Array.isArray([1, 2]));
+
+console.log(myArray.length)
+myArray.push(100);
+console.log(myArray);
+
+myArray.splice(0, 1);
+console.log(myArray)
+
+
+let i = 1
+
+while(i <= 5){
+    console.log(i);
+    i = i + 1;
+}
+
+for (let i = 1; i<= 5; i++){
+console.log(i)
+
+}
+
+let randomNumber = 0;
+
+while(randomNumber < 0.5){
+    randomNumber = Math.random();
+
+}
+console.log(randomNumber);
+*/
+/*
+const todoList = [
+    'make dinner',
+    'wash dishes',
+    'watch youtube'
+]
+
+for(let index = 0; index <= todoList.length - 
+    1 ; index++ ){
+       const value = todoList[index];
+        console.log(value)
+
+}
+
+
+const nums = [1,1,3]
+
+let total = 0;
+
+for (let i = 0; i< nums.length; i++){
+    const num = nums[i];
+    total += num;
+}
+
+console.log(total);
+
+
+const numsDoubled = [];
+
+for (let i = 0; i < nums.length; i++){
+const num = nums[i];
+numsDoubled.push(num * 2)
+
+}
+console.log(numsDoubled)
+*/
+
+const array1 = [1,2,3];
+const array2 = array1;
+array2.push(4);
+console.log(array1);
+console.log(array2);
+
+const [firstValue, secondValue] = [1,2,3];
+
+for (let i = 1; i<= 10; i++){
+   console.log(i);
+}
