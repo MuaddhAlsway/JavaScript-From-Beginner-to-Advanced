@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #B2Add{
+        padding: 12px 15px;
+        color: black;
+        background: red;
+    }
+</style>
+<body>
+    <button>Hello</button>
+    <button>Hello</button>
+    <button class="B1">Welcome</button>
+    <h2>Life is good</h2>
+    <p id="p"></p>
+    <button id="B2Add"></button>
+    <script>
+        document.querySelector('button').innerHTML = 'AndYou';
+        document.querySelector('h2').innerHTML ='Life is not bad';
+        
+        const FirstElement = document.querySelector('.B1').innerHTML = 'Thank You';
+        let Change = document.title = 'Hello';
+        let AddP = document.getElementById('p').innerHTML = 'Hellow Muaddh'
+        let B2Add = document.getElementById('B2Add').innerHTML = 'Welcome back'
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+<p>Join us Now</p>
+<button
+onclick="
+Subscribe ();
+"
+class="js-Joinus-button"
+>Join</button>
+
+<script>
+    function Subscribe(){
+        const buttonElement = document.querySelector('.js-Joinus-button')
+        if (buttonElement.innerText === 'Join'){
+            buttonElement.innerHTML='Thanks';
+            buttonElement.classList.add('is-thanks')
+        } else {
+            buttonElement.innerHTML='Join';
+            buttonElement.classList.remove('is-thanks')
+        }
+
+    }
+</script>
+</body>
+</html>

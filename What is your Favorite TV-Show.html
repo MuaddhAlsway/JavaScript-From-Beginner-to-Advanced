@@ -4,35 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="Practice.js">
+    <script src="What is your Favorite TV-Show.js">
 
     </script>
+    <link rel="stylesheet" href="What is your Favorite TV-Show.css">
 </head>
 <body>
     <h2>What is your favorite tv-show</h2>
-    <button
+    <button class="b1"
     onclick="
 playGame('Firends')
     "
-    >Friends</button><br>
-    <br><button
+    >Friends</button>
+    <button class="b1"
     onclick="
  playGame('Poket99')
     ">
-       Pocket99</button><br><br><br><br>
-       <button
-    onclick="
+       Pocket99</button>
+       <button class="b1"
+    onclick=" 
 playGame('Lupin')
     "
     >
-    lupin</button> <br><br><br><br>
-
+    lupin</button> 
+<p class="js-result"></p>
+<p class="js-moves"></p>
+<p class="js-score"></p>
     <button
     onclick="
     score.wins = 0;
     score.losses = 0;
     score.ties = 0;
-    localStorage.removeItem('score')
+    localStorage.removeItem('score');
+    updateScoreElement();
+
+
     
     "
     >

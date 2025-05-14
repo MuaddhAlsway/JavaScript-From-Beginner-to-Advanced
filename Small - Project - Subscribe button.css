@@ -1,0 +1,28 @@
+body{
+    background: url(img/library-with-lot-books-it_901275-17208.avif);
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100%;
+    background-size: cover;
+}
+p{
+    font-size: 70px;
+    color: blue;
+    font-family: sans-serif;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+button{
+    background: tomato;
+    margin-top: 100px;
+    margin-left: 500px;
+    color: white;
+    padding: 15px;
+    border-radius: 30px;
+}
+.is-thanks{
+
+        background: orange;
+        color: black;
+}
