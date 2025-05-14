@@ -1,0 +1,66 @@
+body{
+    background: rgba(0, 0, 255, 0.397);
+}
+.b1{
+    display: inline-block;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    
+}
+.b2{
+    display: inline-block;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    
+}
+.b3{
+    display: inline-block;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    
+}
+img{
+    width: 80px;
+    
+    margin-left: 150px;
+}
+
+.reset ,.playing {
+    padding: 10px 15px;
+    border: none;
+    background: rgba(255, 0, 0, 0.345);
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top: 10px;
+}
+.p1{
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+    margin-left: 450px;
+}
+.js-result{
+    margin-left: 500px;
+    font-size: 30px;
+    color: white;
+    font-family: Arial;
+}
+.js-moves{
+    margin-left: 200px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial;
+  
+}
+.js-score{
+    margin-left: 500px;
+    font-size: 15px;
+    color: white;
+    font-family: Arial;
+}
+.score {
+    margin-top: 50px;
+}
