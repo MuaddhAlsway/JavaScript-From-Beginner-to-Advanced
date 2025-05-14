@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Project Me - Order Now.css">
+    <script src="Project Me - Order Now.js"></script>
+</head>
+<body>
+    <fieldset class="f1">
+        <h2>Order Now</h2>
+<button class="b1" onclick="
+order1 += 15 ;
+console.log(`Burger $${order1 }`)
+">Burger</button>
+<button class="b2"
+onclick="
+order2 += 5;
+console.log(`Drink $${order2}`)
+">Drink
+</button>
+<button class="b3" onclick="
+order3 += 3;
+console.log(`chips $${order3}`)
+">
+    chips
+</button>
+<button class="b4"
+onclick="
+order4 +=2
+console.log(`chess $${order4}`)
+"
+>chess</button>
+<button class="b5"
+onclick="
+ order1 = 0;
+ order2 = 0;
+ order3 = 0;
+ order4 = 0;
+console.log(`cart was reset.`)
+console.log(`Reset card:${order1,order2,order3,order4}`)
+"
+
+>Reset</button>
+<button class="b6"
+onclick="
+ order5 = order1 + order2 + order3 + order4
+
+console.log(`total your order$${order5}`)
+"
+
+>total</button>
+
+    </fieldset>
+</body>
+</html>
