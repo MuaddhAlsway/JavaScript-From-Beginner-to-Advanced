@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper</title>
+    <link rel="stylesheet" href="06 - rock paper.css">
+
+</head>
+<body>
+    <p class="p1">Rock paper Scissors</p>
+
+    <button class="b1"
+    onclick="
+   playGame('rock')
+    "
+    >Rock</button>
+    <button class="b2"
+    onclick="
+playGame('paper')
+    "
+    >
+    Paper</button>
+    <button class="b3"
+    onclick="
+    playGame('Scissors')
+
+
+    
+"
+
+
+    
+    >Scissors</button>
+    <script >
+    function playGame (playerMove){
+        const computerMove = pickComputerMove();
+        let result = '';
+
+        if (playerMove === 'scissors'){
+            if (computerMove ==='rock') {
+                result = 'You lose.';
+            }
+            else if (computerMove === 'paper') {
+            result = 'You win';
+            }
+            else if (computerMove === 'Scissors'){
+                result = 'tie.';
+            }
+        }
+        alert(`You picked ${playerMove}. computer picked ${computerMove}. ${result}`);  
+
+    }   
+
+    function pickComputerMove (){
+            const rondomNumber = Math.random();
+
+            let  computerMove = '';
+ 
+    if (rondomNumber >= 0  && rondomNumber < (1 / 3)) {
+
+    computerMove = 'Rock';
+    }else if (rondomNumber >= (1/3) && rondomNumber < (2/3)) {
+        computerMove = 'paper'
+    }else if (rondomNumber >= (2/3) && rondomNumber < 1){
+        computerMove = 'Scissors';
+
+    } 
+  return computerMove;
+ }
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Call mam game ...</h2>
+    <button
+    onclick="
+    moathMove ('call mam')
+    "
+    >
+call mam
+    </button>
+
+<script>
+    function moathMove (moath){
+        const mama = pickMomMove();
+        let result = '';
+if (moath === 'call mam'){
+    if (mama ==='call me'){
+        result = 'I win'
+    }
+    else if (mama ==='in the work'){
+        result = 'I lose'
+    }else if (mama === 'to home' ){
+        result = 'BEST FRIENDS TIME'
+    }
+}
+alert(`Moath picked ${moath}. My Queen ${mama}. ${result}`)
+    }
+
+    function pickMomMove (){
+        const mom = Math.random();
+
+        let mama = '';
+    if (mom >= 0 && mom < 1 / 3){
+        mama = 'call me';
+    }else if (mom >= 1/3 && mom < 2/3){
+        mama = 'in the work';
+    }else if (mom >= 2/3 && mom < 1){
+        mama = 'to home';
+    }
+  return mama;
+    }
+</script>
+</body>
+</html>
