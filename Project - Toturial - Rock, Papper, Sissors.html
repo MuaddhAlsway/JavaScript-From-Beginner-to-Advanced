@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper</title>
+    <link rel="stylesheet" href="Project - Toturial - Rock -Papper - Sissors.css">
+<script src="Project - Toturial - Rock -Papper - Sissors.js"></script>
+</head>
+<body>
+    <p class="p1">Rock paper Scissors</p>
+
+    <button class="b1"
+    onclick="
+    const rondomNumber = Math.random();
+    let  computerMove = '';
+
+
+    if (rondomNumber >= 0  && rondomNumber <
+    1 / 3) {
+
+    computerMove = 'Rock';
+    }else if (rondomNumber >= 1/3 && rondomNumber < 2/3) {
+        computerMove = 'paper'
+    }else if (rondomNumber >= 2/3 && rondomNumber < 1){
+        computerMove = 'Scissors';
+
+    } 
+
+    console.log(computerMove);
+    let result = '';
+if (computerMove === 'rock') {
+result = 'tie.';
+}else if (computerMove === 'paper') {
+    result = 'You lose';
+}else if (computerMove === 'Scissors'){
+    result = 'you win.';
+}
+  alert(`You picked Rock. computer picked ${computerMove}. ${result}`);  
+    "
+    >Rock</button>
+    <button class="b2"
+    onclick="
+ const rondomNumber = Math.random();
+    let  computerMove = '';
+
+
+    if (rondomNumber >= 0  && rondomNumber < (1 / 3)) {
+
+    computerMove = 'Rock';
+    }else if (rondomNumber >= (1/3) && rondomNumber < (2/3)) {
+        computerMove = 'paper'
+    }else if (rondomNumber >= (2/3) && rondomNumber < 1){
+        computerMove = 'Scissors';
+
+    } 
+
+    console.log(computerMove);
+    let result = '';
+if (computerMove === 'rock') {
+result = 'You win.';
+}else if (computerMove === 'paper') {
+    result = 'tie';
+}else if (computerMove === 'Scissors'){
+    result = 'you lose.';
+}
+  alert(`You picked paper. computer picked ${computerMove}. ${result}`);  
+    
+    "
+    >
+    Paper</button>
+    <button class="b3"
+    onclick="
+    
+    const rondomNumber = Math.random();
+    let  computerMove = '';
+
+
+    if (rondomNumber >= 0  && rondomNumber <
+    1 / 3) {
+
+    computerMove = 'Rock';
+    }else if (rondomNumber >= 1/3 && rondomNumber < 2/3) {
+        computerMove = 'paper'
+    }else if (rondomNumber >= 2/3 && rondomNumber < 1){
+        computerMove = 'Scissors';
+
+    } 
+
+    console.log(computerMove);
+    let result = '';
+if (computerMove === 'rock') {
+result = 'You lose.';
+}else if (computerMove === 'paper') {
+    result = 'You win';
+}else if (computerMove === 'Scissors'){
+    result = 'tie.';
+}
+  alert(`You picked Scissors. computer picked ${computerMove}. ${result}`);  
+    
+"
+    
+    >Scissors</button>
+</body>
+</html>
