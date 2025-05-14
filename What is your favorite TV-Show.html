@@ -7,104 +7,42 @@
     <script src="What is your favorite TV-Show.js">
 
     </script>
+    <link rel="stylesheet" href="What is your favorite TV-Show.css">
 </head>
 <body>
-    <h2>What is your favorite tv-show</h2>
-    <img src="img/images.jpg" width="100px"><br>
-    <button
+    <h2 class="p1">What is your favorite tv-show</h2>
+    <button class="b1"
     onclick="
-    const rondomNumber = Math.random();
-    let  computerMove = '';
-
-
-    if (rondomNumber >= 0  && rondomNumber <
-    1 / 3) {
-
-    computerMove = 'Friends';
-    }else if (rondomNumber >= 1/3 && rondomNumber < 2/3) {
-        computerMove = 'Pocket99'
-    }else if (rondomNumber >= 2/3 && rondomNumber < 1){
-        computerMove = 'lupin';
-
-    } 
-
-    console.log(computerMove);
-    let result = '';
-if (computerMove === 'Friends') {
-result = 'You win.';
-}else if (computerMove === 'Pocket99') {
-    result = 'tie';
-}else if (computerMove === 'lupin'){
-    result = 'you lose.';
-}
-  alert(`You picked Friends. computer picked ${computerMove}. ${result}`);  
-    
+playGame('Friends')
     "
+    ><img  src="img/Friends-emoji.png" alt=""></button>
+    <button class="b2"
+    onclick="
+ playGame('Pocket99')
+    "><img  src="img/Pocket99-emoji.png" alt=""></button>
+       <button class="b3"
+    onclick=" 
+playGame('Lupin')
     "
-    >Friends</button><br>
-    <img src="img/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg" width="150px">
-    <br><button
-    onclick="
- const rondomNumber = Math.random();
-    let  computerMove = '';
-
-
-    if (rondomNumber >= 0  && rondomNumber <
-    1 / 3) {
-
-    computerMove = 'Friends';
-    }else if (rondomNumber >= 1/3 && rondomNumber < 2/3) {
-        computerMove = 'Pocket99'
-    }else if (rondomNumber >= 2/3 && rondomNumber < 1){
-        computerMove = 'lupin';
-
-    } 
-
-    console.log(computerMove);
-    let result = '';
-if (computerMove === 'Friends') {
-result = 'You win.';
-}else if (computerMove === 'Pocket99') {
-    result = 'tie';
-}else if (computerMove === 'lupin'){
-    result = 'you lose.';
-}
-  alert(`You picked Pocket99. computer picked ${computerMove}. ${result}`);  
+    ><img  src="img/Lupin-emoji.png" alt=""></button> 
+<p class="js-result"></p>
+<p class="js-moves">
     
-    ">
-       Pocket99</button><br>
-       <img src="img/MV5BMDdlNGMyZjktYzM0Yi00ZWE3LTk0NTEtMmU1OWIxNmU4OWQ2XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" width="150px"><br>
-       <button
+</p>
+<p class="js-score score"></p>
+    <button class="reset"
     onclick="
-    
-    const rondomNumber = Math.random();
-    let  computerMove = '';
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
 
 
-    if (rondomNumber >= 0  && rondomNumber <
-    1 / 3) {
-
-    computerMove = 'Friends';
-    }else if (rondomNumber >= 1/3 && rondomNumber < 2/3) {
-        computerMove = 'Pocket99'
-    }else if (rondomNumber >= 2/3 && rondomNumber < 1){
-        computerMove = 'lupin';
-
-    } 
-
-    console.log(computerMove);
-    let result = '';
-if (computerMove === 'Friends') {
-result = 'You lose.';
-}else if (computerMove === 'Pocket99') {
-    result = 'You win';
-}else if (computerMove === 'lupin'){
-    result = 'tie.';
-}
-  alert(`You picked lupin. computer picked ${computerMove}. ${result}`);  
     
     "
     >
-    lupin</button>
+Reset score
+    </button>
 </body>
 </html>
